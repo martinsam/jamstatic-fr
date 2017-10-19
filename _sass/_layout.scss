@@ -61,6 +61,29 @@ body {
   }
 }
 
+.site-search {
+    text-align: center;
+    padding: 1rem 0 0 0;
+
+    .searchbox {
+      background-color: $grey-color-dark;
+      border: 1px solid $grey-color;
+      padding: .25rem;
+      font-size: 1rem;
+      color: white;
+      line-height: 1;
+      width: 16rem;
+
+      &:focus {
+        border-color: white;
+      }
+    }
+
+    .searchbox__input::placeholder {
+      color: #ffffff;
+    }
+
+}
 .site-footer {
   padding: $spacing-unit $spacing-unit / 2 0;
   background: $grey-color-dark;

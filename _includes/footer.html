@@ -28,7 +28,16 @@
 </footer>
 <script src="{{ "assets/js/anchor.min.js" | relative_url }}"></script>
 <script>anchors.add('.post h2, .post h3');</script>
-<script async src="{{ "assets/js/turbolinks.js " | relative_url }}">
+<script async src="{{ "assets/js/turbolinks.js " | relative_url }}"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+<script type="text/javascript">
+docsearch({
+apiKey: '8fbe487bd487b154aed73dadc10bd194',
+indexName: 'jamstatic',
+inputSelector: '#search',
+debug: true // Set debug to true if you want to inspect the dropdown
+});
+</script>
 <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
