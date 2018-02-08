@@ -42,7 +42,7 @@ Le contexte d'origine, celui disponible dans votre fichier de gabarit racine `ba
 
 Même les informations de votre site sont stockées dans le contexte de page à l'aide de `.Site` qui est prêt à l'emploi.
 
-Mais en _Go Template_ dès que vous utilisez une fonction, vous perdez ce contexte, et votre précieux point, votre contexte est remplacé par celui de la fonction, qui a son propre… point.
+Mais en _Go Template_ dès que vous utilisez une fonction, vous peperdezrdez ce contexte, et votre précieux point, votre contexte est remplacé par celui de la fonction, qui a son propre… point.
 
 Si par exemple dans mon gabarit de page j'ai :
 
@@ -105,7 +105,7 @@ Heureusement pour nous, Hugo stocke le contexte de page dans un `$` donc cela ne
 <h1>{{ .Title }}</h1>
 {{ range .Data.Pages }}
     <article>
-        {{/* 2. Le point désige la page en cours */}}
+        {{/* 2. Le point désigne la page en cours */}}
         <h3>{{ .Title }}</h3>
         <hr>
         {{ range .Resources.Match "images/.*" }}
